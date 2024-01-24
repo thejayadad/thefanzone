@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/mongodb-adapter": "^2.0.14",
     "mongoose": "^8.1.0",
     "monodb": "^1.5.1",
     "next": "14.1.0",
