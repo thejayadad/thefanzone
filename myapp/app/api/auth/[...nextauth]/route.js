@@ -41,10 +41,10 @@ export const authOptions = {
   async function signInWithOAuth({ profile }){
     await db();
   
-    const user = await UserModel.exists({email: profile.email});
+    const user = await User.exists({email: profile.email});
     if(user) return true; // signin
   
-    const newUser = new UserModel({
+    const newUser = new User({
       name: profile.name,
       email: profile.email,
       profilePic: profile.picture
@@ -58,7 +58,7 @@ export const authOptions = {
   async function getUserByEmail({ email }){
     await db();
     
-    const user = await UserModel.findOne({ email });
+    const user = await User.findOne({ email });
     if(!user) throw new Error('Email does not exist!');
   
     const newUser = {
