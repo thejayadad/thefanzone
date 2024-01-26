@@ -9,15 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth/mongodb-adapter": "^2.0.14",
-    "mongoose": "^8.1.0",
-    "monodb": "^1.5.1",
+    "@nextui-org/react": "^2.2.9",
+    "bcrypt": "^5.1.1",
+    "framer-motion": "^11.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.1",
     "next": "14.1.0",
     "next-auth": "^4.24.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.0.1",
-    "react-toastify": "^10.0.4"
+    "react-toastify": "^10.0.4",
+    "timeago.js": "^4.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
