@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import UiNextProvider from "@/lib/UiNextProvider";
 import AuthProvider from "@/SessionProvider";
-import Navbar from "@/components/Navbar";
+import { NextThemeProvider } from "@/lib/NextThemeProvider";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,17 +13,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
+    <html lang="en"
     className={(inter.className, "dark")}
     style={{
       colorScheme: "dark",
     }}
-    lang="en">
+    >
       <body>
         <AuthProvider>
-        <UiNextProvider>
-        {children}
-        </UiNextProvider>
+        <NextThemeProvider>
+          {children}
+          </NextThemeProvider>
         </AuthProvider>
       </body>
     </html>

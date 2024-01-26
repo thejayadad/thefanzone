@@ -5,9 +5,13 @@ import { Button } from '@nextui-org/react';
 const Hero = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="text-center flex flex-col text-white">
+      <div
+      style={{marginTop: '-200px'}}
+      className="text-center flex flex-col text-white">
         {/* Logo */}
-        <img src='../logo.png' alt="Logo" className="h-64" />
+        <img 
+        
+        src='../logo.png' alt="Logo" className="h-64" />
 
         <h1
         style={{marginTop: '-40px'}}
