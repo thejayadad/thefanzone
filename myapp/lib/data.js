@@ -10,6 +10,7 @@ export const getUserWorkouts = async () => {
     try {
         db.connect()
         const workouts = await Workout.find({creator: userEmail})
+        console.log("workouts " + workouts)
         return workouts
     } catch (error) {
         throw new Error("Failed to fetch workouts! " + error); 

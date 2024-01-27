@@ -15,7 +15,9 @@ const Dashboard = async () => {
         ) : (
           <ul>
             {workouts.map((workout) => (
-              <li key={workout.id}>{workout.name}</li>
+              <div key={workout.id}>
+                <span className='text-grey'>{workout.title}</span>
+              </div>
             ))}
           </ul>
         )}

@@ -18,7 +18,7 @@ const LoginPage = async () => {
       className="text-center flex flex-col text-white">   
              <img 
         
-        src='../logo.png' alt="Logo" className="h-64" />     
+        src='../logo.png' alt="Logo" className="h-64 text-grey" />     
       <Link href={'/dashboard'}>
             Dashboard
         </Link>

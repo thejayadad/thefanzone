@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import {FiHome, FiList, FiPlus} from "react-icons/fi"
+import Modals from './Modal';
+import AddWorkout from '../Forms/AddWorkout';
 
 const links = [
     { name: 'Home', href: '/dashboard', icon: FiHome },
@@ -12,7 +14,6 @@ const links = [
       href: '/dashboard/workout',
       icon: FiList,
     },
-    { name: 'Create', href: '/dashboard/new', icon: FiPlus },
   ];
 
 const Aside = () => {
@@ -41,6 +42,7 @@ const Aside = () => {
     );
   })}
 </>
+  <Modals children={<AddWorkout />}/> 
         </div>
     </div>              
 </div>
