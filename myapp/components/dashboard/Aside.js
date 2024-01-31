@@ -14,7 +14,7 @@ const links = [
       href: '/dashboard/workout',
       icon: FiList,
     },
-  ];
+    ];
 
 const Aside = () => {
     const pathname = usePathname();
